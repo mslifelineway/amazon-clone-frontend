@@ -1,0 +1,19 @@
+.popover__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  padding: 1rem;
+  display: none;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.popover__container .popover__caret {
+  position: absolute;
+  top: -20px;
+  margin-left: 14px;
+  font-size: 2.2rem;
+  color: white;
+}

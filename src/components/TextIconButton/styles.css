@@ -1,0 +1,30 @@
+.text__icon_button {
+  width: auto;
+  height: auto;
+  color: #fff;
+  padding: 4px 9px 4px 9px;
+  margin: 5px 0 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+
+.text__icon_button:hover {
+  border: 1px solid #fff;
+}
+.text__icon_button .icon__button-icon {
+  background-position: 0 1000px;
+  width: 17px;
+  height: 14px;
+  margin-right: 5px;
+  /* background-image: url("../../assets/images/icons_pack2.png"); */
+  /* background-position: -172px -255px; */
+}
+.text__icon_button span.icon__button-text {
+  white-space: nowrap;
+}
+.text__icon_button img {
+  height: 35px;
+}

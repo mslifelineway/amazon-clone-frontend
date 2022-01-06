@@ -1,0 +1,14 @@
+.nav__main {
+  background-color: var(--color-darkblue);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+}
+.nav__main .nav__left {
+  padding: 0 8px;
+}
+.nav__main .nav__fill {
+  max-height: 40px;
+  flex-wrap: wrap;
+}

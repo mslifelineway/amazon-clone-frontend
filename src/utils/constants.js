@@ -26,7 +26,7 @@ export const PAGE_PATHS = {
   giftIdeas: "/gift-ideas",
   healthAndPersonalCare: "/health-and-personal-care",
   kindleStore: "/Kindle-Store",
-  bestsellers: "/bestsellers",
+  bestSellers: "/bestsellers",
   newReleases: "/new-releases",
   moversAndShakers: "/movers-and-shakers",
   cartView: "/cart/view",

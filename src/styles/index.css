@@ -100,3 +100,25 @@ a {
 .pr30 {
   padding-right: 30px;
 }
+
+.translateX_right {
+  transform: translateX(100%);
+}
+
+.arrow__next {
+  background-image: url(../assets/images/icons_pack2.png);
+  background-position: -137px -288px;
+  width: 10px;
+  height: 14px;
+  transform: scaleX(1);
+  background-repeat: repeat-x;
+}
+
+.back__arrow {
+  background-image: url(../assets/images/icons_pack2.png);
+  background-position: -137px -310px;
+  background-repeat: repeat-x;
+  width: 16px;
+  height: 16px;
+  transform: scaleX(1);
+}

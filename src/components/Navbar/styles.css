@@ -11,4 +11,5 @@
 .nav__main .nav__fill {
   max-height: 40px;
   flex-wrap: wrap;
+  overflow: hidden;
 }

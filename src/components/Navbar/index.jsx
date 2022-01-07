@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DrawerContext } from "../../contexts";
 import { TextIconButton } from "..";
 import { PAGE_PATHS } from "../../utils/constants";
 import "./styles.css";
@@ -24,15 +25,15 @@ const RenderNavMenus = () =>
   ));
 
 const Navbar = () => {
+  const { openDrawer } = useContext(DrawerContext);
+
   return (
     <div className="nav__main">
       <div className="nav__left">
         <TextIconButton
           text="All"
           image="../../assets/images/icons_pack2.png"
-          onClick={() => {
-            console.log("---> clicked event");
-          }}
+          onClick={openDrawer}
           iconStyle={{
             backgroundPosition: "-172px -255px",
           }}

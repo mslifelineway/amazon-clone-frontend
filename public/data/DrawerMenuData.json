@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Trending",
+    "link": "",
+    "menus": [
+      { "name": "Best Sellers", "link": "/bestsellers" },
+      { "name": "New Releases", "link": "/new-releases" },
+      { "name": "Movers and Shakers", "link": "/movers-and-shakers" }
+    ]
+  },
+
+  {
+    "name": "Digital Content And Devices",
+    "link": "",
+    "menus": [
+      {
+        "name": "Echo & Alexa",
+        "link": "",
+        "menus": [
+          {
+            "name": "Echo & Alexa",
+            "link": "",
+            "menus": [
+              {
+                "name": "All-new Echo Dot (4th Gen)",
+                "link": "/all-new-echo-dot-4th-gen",
+                "link": "",
+                "menus": [
+                  {
+                    "name": "All-new Echo Dot (4th Gen) - sub MENUS",
+                    "link": ""
+                  },
+                  {
+                    "name": "All-new Echo Dot (4th Gen)  = SB1",
+                    "link": "/all-new-echo-dot-4th-gen"
+                  },
+                  { "name": "Echo Dot (3rd Gen)", "link": "/echo-dot-3rd-gen" },
+                  { "name": "Echo Show 8", "link": "/echo-show-dot" },
+                  { "name": "Echo Studio", "link": "/" },
+                  {
+                    "name": "All-new Echo Show 10",
+                    "link": "/all-new-echo-show-10"
+                  },
+                  {
+                    "name": "See all devices with Alexa",
+                    "link": "/all-devices-with-alexa"
+                  }
+                ]
+              },
+              { "name": "Echo Dot (3rd Gen)", "link": "/echo-dot-3rd-gen" },
+              { "name": "Echo Show 8", "link": "/echo-show-dot" },
+              { "name": "Echo Studio", "link": "/" },
+              {
+                "name": "All-new Echo Show 10",
+                "link": "/all-new-echo-show-10"
+              },
+              {
+                "name": "See all devices with Alexa",
+                "link": "/all-devices-with-alexa"
+              }
+            ]
+          },
+
+          {
+            "name": "Content & Resources",
+            "link": "",
+            "menus": [
+              { "name": "Meet Alexa", "link": "/meet-alexa" },
+              { "name": "Alexa Skills", "link": "/alexa-skills" },
+              { "name": "Alexa App", "link": "/alexa-app" },
+              { "name": "Alexa Smart Home", "link": "/alexa-smart-home" },
+              { "name": "Amazon Prime Music", "link": "/amazon-prime-music" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fire TV",
+        "link": "",
+        "menus": [
+          { "name": "Fire Tv", "link": "" },
+          {
+            "name": "Introducing: Fire TV Stick Lite",
+            "link": "/fire-tv-stick-lite"
+          },
+          {
+            "name": "All-new Fire TV Stick (3rd Gen)",
+            "link": "/all-new-fire-tv-stick-3rd-gen"
+          },
+          { "name": "Fire TV Stick 4k", "link": "/fire-tv-stick-4k" },
+          { "name": "Fire TV Cube", "link": "/fire-tv-cube" },
+          { "name": "Amazon Prime Video", "link": "/amazon-prime-video" },
+          { "name": "Fire TV Apps & Games", "link": "/fire-tv-apps-and-games" },
+          {
+            "name": "See all Fire TV devices",
+            "link": "/all-fire-tv-devices"
+          }
+        ]
+      },
+      {
+        "name": "Kindle E-Readers & eBooks",
+        "link": "",
+        "menus": [
+          {
+            "name": "Kindle E Readers",
+            "link": "",
+            "menus": [
+              { "name": "All-new Kindle", "link": "/all-new-kindle" },
+              {
+                "name": "All-new Kindle Paperwhite",
+                "link": "/all-new-kindle-paperwhite"
+              },
+              {
+                "name": "Kindle Paperwhite Starter Pack",
+                "link": "/kindle-paperwhite-starter-pack"
+              },
+              {
+                "name": "All-New Kindle Oasis",
+                "link": "/all-new-kindle-oasis"
+              },
+              {
+                "name": "Refurbished & Open Box",
+                "link": "/refurbished-and-open-box"
+              },
+              {
+                "name": "Kindle E-Reader Accessories",
+                "link": "/kindle-ereader-accessories"
+              },
+              {
+                "name": "See all Kindle E-readers",
+                "link": "/all-kindle-ereaders"
+              }
+            ]
+          },
+          {
+            "name": "Kindle Ebooks",
+            "link": "",
+            "menus": [
+              { "name": "All Kindle eBooks", "link": "/all-kindle-ebooks" },
+              { "name": "Prime Reading", "link": "/prime-reading" },
+              { "name": "Kindle Unlimited", "link": "/kindle-undefined" },
+              {
+                "name": "Deals on Kindle eBooks",
+                "link": "/deals-on-kindle-ebooks"
+              },
+              { "name": "Kindle Exam Central", "link": "/kindle-exam-central" },
+              { "name": "Kindle eTextbooks", "link": "/kindle-eTextbooks" },
+              { "name": "eBook Bestsellers", "link": "/ebook-bestsellers" },
+              {
+                "name": "eBooks in Indian Languages",
+                "link": "/ebooks-in-indian-languages"
+              },
+              { "name": "Hindi", "link": "/hindi" },
+              { "name": "Tamil", "link": "/tamil" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Audible Audiobooks",
+        "link": "",
+        "menus": [
+          { "name": "Audible Audiobooks", "link": "" },
+          { "name": "Audible Membership", "link": "/audible-membership" },
+          { "name": "All Audiobooks", "link": "/all-audiobooks" },
+          { "name": "Best Sellers", "link": "/best-sellers" },
+          { "name": "New Releases", "link": "/new-releases" },
+          { "name": "Hindi Audiobooks", "link": "/hindi-audiobooks" }
+        ]
+      },
+      { "name": "Amazon Prime Video", "link": "/" },
+      { "name": "Amazon Prime Music", "link": "/" }
+    ]
+  },
+  {
+    "name": "Shop By Department",
+    "link": "",
+    "menus": [
+      { "name": "Mobiles, Computers", "link": "", "menus": [] },
+      { "name": "TV, Appliances, Electronics", "link": "", "menus": [] },
+      { "name": "Mens's Fashion", "link": "", "menus": [] },
+      { "name": "Women's Fashion", "link": "", "menus": [] },
+      { "name": "Home, Kitchen, Pets", "link": "", "menus": [] },
+      { "name": "Beauty, Health, Grocery", "link": "", "menus": [] },
+      { "name": "Sports, Fitness, Bags, Luggage", "link": "", "menus": [] },
+      { "name": "Toys, Baby Products, Kid's Fashion", "link": "", "menus": [] },
+      { "name": "Car, Motorbike, Industrial", "link": "", "menus": [] },
+      { "name": "Books", "link": "", "menus": [] },
+      { "name": "Movies, Music & Video Games", "link": "", "menus": [] }
+    ]
+  },
+  {
+    "name": "Programs & Features",
+    "link": "",
+    "menus": [
+      { "name": "Gift Cards & Mobile Recharges", "link": "", "menus": [] },
+      { "name": "Flight Tickets", "link": "", "menus": [] },
+      { "name": "#FoundItOnAmazon", "link": "", "menus": [] },
+      { "name": "Amazon Outlet", "link": "", "menus": [] }
+    ]
+  },
+  {
+    "name": "Help & Settings",
+    "link": "",
+    "menus": [
+      { "name": "Your Account", "link": "/your-account" },
+      { "name": "Customer Service", "link": "/customer-service" },
+      { "name": "Sign Out", "link": "/signout" }
+    ]
+  }
+]

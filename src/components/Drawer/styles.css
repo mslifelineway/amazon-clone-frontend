@@ -19,6 +19,7 @@
   height: 100%;
   box-shadow: 4px 0 10px 0 rgb(0 0 0 / 40%);
   will-change: transform;
+  padding-bottom: 3rem;
 }
 
 .drawer__close--icon {
@@ -71,13 +72,9 @@
   left: 0;
   top: 0;
   bottom: 0;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   will-change: transform;
-  visibility: hidden;
-}
-
-.drawer__menu--visible {
-  visibility: visible;
 }
 
 .drawer__menu .menu__item.title {

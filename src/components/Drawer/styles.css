@@ -86,6 +86,14 @@
   text-transform: capitalize;
   display: inline-block;
 }
+.drawer__menu div:not(:first-child) .menu__item.title {
+  padding-top: 15px;
+  margin-top: 5px;
+  border-top: 1px solid var(--color-grey);
+}
+.drawer__menu.sub__menus div:nth-child(2) .menu__item.title {
+  border: none;
+}
 .drawer__menu .menu__item {
   padding-right: 20px;
   padding-left: 36px;
@@ -94,6 +102,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  font-size: 13px;
 }
 .drawer__menu a.menu__item:hover {
   text-decoration: none;
@@ -117,4 +126,14 @@
 }
 .drawer__menu a.menu__item:hover .arrow__next {
   background-position: -166px -288px;
+}
+.drawer__menu a.menu__item.see__less--button,
+.drawer__menu a.menu__item.see__more--button {
+  cursor: pointer;
+}
+.drawer__menu a.menu__item:hover .arrow__more {
+  background-position: -184px -361px;
+}
+.drawer__menu a.menu__item:hover .arrow__less {
+  background-position: -184px -361px;
 }

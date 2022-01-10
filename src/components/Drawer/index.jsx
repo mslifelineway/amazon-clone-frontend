@@ -34,6 +34,21 @@ const Drawer = () => {
     }
   }, []);
 
+  const handleMenuViews = (e, type = "more") => {
+    if (type === "more") {
+      const seeMoreButton = e.currentTarget.parentNode;
+      const closestList = seeMoreButton.parentNode.children[3];
+      seeMoreButton.classList.add("hide");
+      closestList.classList.remove("hide");
+    } else {
+      const seeLessButton = e.currentTarget.parentNode;
+      const closestList = seeLessButton.parentNode.parentNode.children[3];
+      const seeMoreButton = seeLessButton.parentNode.parentNode.children[2];
+      seeMoreButton.classList.remove("hide");
+      closestList.classList.add("hide");
+    }
+  };
+
   const RenderDrawerMenus = ({
     menus = drawerMenus,
     parent = true,
@@ -62,12 +77,44 @@ const Drawer = () => {
               )}
             </li>
             {m.menus && (
-              <RenderDrawerMenus
-                menus={m.menus}
-                parent={false}
-                menuLevel={menuLevel + 1}
-                parentMenus={menus}
-              />
+              <div className="see__less--menus">
+                <RenderDrawerMenus
+                  menus={[...m.menus].splice(0, 6)}
+                  parent={false}
+                  menuLevel={menuLevel + 1}
+                  parentMenus={menus}
+                />
+              </div>
+            )}
+            {m.link === "" && parent && m.menus?.length > 6 && (
+              <li>
+                <a
+                  className="menu__item see__more--button"
+                  onClick={handleMenuViews}
+                >
+                  See All
+                  <i className="arrow__more  ml10"></i>
+                </a>
+              </li>
+            )}
+            {m.menus && (
+              <div className="see__more--menus hide">
+                <RenderDrawerMenus
+                  menus={[...m.menus].splice(6, m.menus.length - 1)}
+                  parent={false}
+                  menuLevel={menuLevel + 1}
+                  parentMenus={menus}
+                />
+                <li>
+                  <a
+                    className="menu__item see__less--button"
+                    onClick={(e) => handleMenuViews(e, "less")}
+                  >
+                    See Less
+                    <i className="arrow__less ml10"></i>
+                  </a>
+                </li>
+              </div>
             )}
           </div>
         );
@@ -85,7 +132,7 @@ const Drawer = () => {
         </a>
 
         <div className="drawer__menu--content">
-          <ul className="drawer__menu">
+          <ul className={`drawer__menu ${showBackMenuButton && "sub__menus"}`}>
             {showBackMenuButton && (
               <li>
                 <a

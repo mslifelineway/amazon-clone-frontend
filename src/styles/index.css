@@ -100,6 +100,9 @@ a {
 .pr30 {
   padding-right: 30px;
 }
+.ml-auto {
+  margin-left: auto;
+}
 
 .translateX_right {
   transform: translateX(100%);
@@ -121,4 +124,25 @@ a {
   width: 16px;
   height: 16px;
   transform: scaleX(1);
+}
+.arrow__more {
+  height: 8px;
+  width: 13px;
+  background-image: url(../assets/images/icons_pack2.png);
+  background-repeat: repeat-x;
+  background-position: -184px -342px;
+}
+.arrow__less {
+  height: 8px;
+  width: 13px;
+  background-image: url(../assets/images/icons_pack2.png);
+  background-repeat: repeat-x;
+  background-position: -184px -342px;
+  transform: rotate(180deg);
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
 }

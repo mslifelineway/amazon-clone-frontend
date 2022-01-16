@@ -1,0 +1,13 @@
+a.text__link--button {
+    color: var(--color-link);
+    text-decoration: none;
+    width: 100%;
+    white-space: normal;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+a.text__link--button:hover {
+    text-decoration: underline;
+    color: var(--color-darkorange);
+}

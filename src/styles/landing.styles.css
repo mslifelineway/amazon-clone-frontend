@@ -1,0 +1,29 @@
+.landing__carouse {
+    background: #eaeded;
+    margin: 0 auto;
+    max-width: none;
+    min-width: 1000px;
+    overflow: hidden;
+}
+.landing__other-layout {
+    position: relative;
+    padding: 20px 10px 0 10px;
+    /* background-color: pink; */
+    height: 100vh;
+}
+.landing__main--container {
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.landing__main--container .list__item {
+}
+.landing__sponsor--banner span {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}

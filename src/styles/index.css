@@ -2,13 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 :root {
-  --color-orange: #febd69;
+  --color-orange: orange;
+  --color-darkorange: #c7511f;
+  --color-orange-light: #febd69;
   --color-darkblue: #232f3e;
   --color-white: #fff;
   --color-primary: #131921;
   --color-secondary: #0f1111;
   --color-grey: #dddddd;
   --color-footer: #131a22;
+  --color-link: #007185;
 }
 
 * {
@@ -94,6 +97,9 @@ a {
 .pl10 {
   padding-left: 10px;
 }
+.pr10 {
+  padding-right: 10px;
+}
 .pr20 {
   padding-right: 20px;
 }
@@ -106,6 +112,9 @@ a {
 
 .translateX_right {
   transform: translateX(100%);
+}
+.p10 {
+  padding: 10px;
 }
 
 .arrow__next {
@@ -145,4 +154,10 @@ a {
 }
 .hide {
   display: none;
+}
+.fullWidth {
+  width: 100% !important;
+}
+.fullHeight {
+  height: 100%;
 }

@@ -2,8 +2,14 @@ import React from "react";
 import { Divider, TextLinkButton } from "../..";
 import "./styles.css";
 
-const CardImageTitle = ({ title, imageData = [], footerLink, footerText }) => {
-  const RenderCards = () => {
+const CardImageTitle = ({
+  title,
+  subtitle,
+  imageData = [],
+  footerLink,
+  footerText,
+}) => {
+  const RenderImageCards = () => {
     return imageData.map((d, i) => (
       <a
         href={d.link}
@@ -23,9 +29,11 @@ const CardImageTitle = ({ title, imageData = [], footerLink, footerText }) => {
           <h2 className="header__title">{title}</h2>
         </div>
       )}
-      {imageData.length > 0 && (
+      {(imageData.length > 0 || subtitle) && (
         <div className="cardImage__body">
-          <RenderCards />
+          {subtitle && <span>{subtitle}</span>}
+
+          <RenderImageCards />
         </div>
       )}
       {footerText && (

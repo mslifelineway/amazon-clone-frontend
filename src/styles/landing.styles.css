@@ -1,17 +1,14 @@
-.landing__carouse {
+.landing__carousel {
     background: #eaeded;
     margin: 0 auto;
     max-width: none;
-    min-width: 1000px;
     overflow: hidden;
 }
 .landing__other-layout {
     position: relative;
     padding: 20px 10px 0 10px;
-    /* background-color: pink; */
-    height: 100vh;
 }
-.landing__main--container {
+.landing__main--container .grid__view {
     padding: 20px 0;
     width: 100%;
     margin: 0 auto;
@@ -21,9 +18,62 @@
     grid-template-columns: auto auto auto auto;
 }
 
-.landing__main--container .list__item {
+.landing__sponsor--banner .sponsor__banner--card {
+    background-color: #fff;
+    padding: 20px;
 }
-.landing__sponsor--banner span {
+.landing__sponsor--banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.landing__sponsor--banner .banner2 {
+    padding: 20px 20px 0 20px;
+}
+.landing__sponsor--banner .banner2 .cardImage__title {
+    padding: 0;
+    background: transparent;
+}
+.landing__sponsor--banner .banner2 .cardImage__title .cardImage__body {
+    grid-template-columns: auto;
+    gap: 0;
+    margin-top: 20px;
+}
+.landing__sponsor--banner .banner2 .cardImage__title .cardImage__body .item {
+    flex-direction: row;
+}
+.landing__sponsor--banner .banner2 .cardImage__title .cardImage__body .item img {
+    width: auto;
+}
+
+.landing__sponsor--banner h2 {
+    font-size: 21px !important;
+    line-height: 27.3px !important;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px !important;
+    font-weight: 700;
+}
+
+.landing__sponsor--banner span.sponsor__ad {
     text-decoration: none;
+    color: rgb(85, 85, 85);
+    position: absolute;
+    bottom: -15px;
+    right: 60px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.landing__sponsor--banner span.sponsor__ad svg {
+    color: rgb(133, 133, 133);
+    margin-left: 3px;
+}
+.landing__sponsor--banner span.sponsor__ad:hover {
+    color: rgb(36, 36, 36);
+    font-weight: 500;
+}
+.landing__sponsor--banner span.sponsor__ad:hover svg {
     color: rgb(85, 85, 85);
 }

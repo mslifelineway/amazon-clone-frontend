@@ -211,7 +211,7 @@
   white-space: nowrap;
 }
 .header__language-list a:hover i,
-span {
+.header__language-list a:hover span {
   background-position: -123px -2px;
 }
 .header__language-list a:hover span {

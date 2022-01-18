@@ -1,0 +1,109 @@
+.custom__carousel {
+    width: 100%;
+    position: relative;
+}
+.carousel__list--container {
+    background: #fff;
+    overflow: hidden;
+}
+.custom__carousel .carousel__list {
+    display: flex;
+    list-style: none;
+}
+.carousel__item .item {
+    padding: 10px;
+    display: block;
+}
+.carousel__item .image__details {
+    height: 200px;
+    min-width: 200px;
+    text-align: center;
+}
+.carousel__item .image__details img {
+    width: auto;
+    height: auto;
+    max-width: 270px;
+    max-height: 200px;
+    vertical-align: middle;
+}
+.carousel__item .other__details .price__details {
+    text-align: center;
+}
+
+.carousel__item .deal__timer .offer__expire--timer {
+    display: flex;
+    flex-direction: column;
+}
+.carousel__item .deal__timer .offer__expire--timer .label {
+    margin-right: 5px;
+}
+.carousel__item .deal__timer .offer__expire--timer {
+    font-size: 12px;
+}
+
+.custom__carousel .prev__button,
+.custom__carousel .next__button {
+    position: absolute;
+    top: 55px;
+    background-color: #fff;
+    height: 100px;
+    line-height: 100px;
+    width: 45px;
+    text-align: center;
+    box-shadow: 0 1px 3px #888;
+}
+
+.custom__carousel .controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.custom__carousel .prev__button:focus,
+.custom__carousel .next__button:focus {
+    box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+}
+.custom__carousel .next__button {
+    right: 0;
+}
+.custom__carousel .controller__icon {
+    background-image: url(../../assets/images/icons_pack3.png);
+    background-size: 132px 235px;
+    background-position: -14px 0;
+    height: 22px;
+    width: 13px;
+}
+
+.custom__carousel .next__icon {
+    transform: rotate(180deg);
+}
+.carousel__list--container:hover .carousel__scrollbar .scrollbar__track {
+    display: block;
+}
+.carousel__scrollbar {
+    display: block;
+    height: 6px;
+    width: 98%;
+    user-select: none;
+    font-size: 0;
+    margin: 30px 0px 20px 20px;
+}
+.carousel__scrollbar .scrollbar__track {
+    display: none;
+
+    background-color: #eee;
+    height: 1px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0;
+}
+.carousel__scrollbar .scrollbar__thumb {
+    background-color: #aaa;
+    border-radius: 6px;
+    margin: 0;
+    cursor: pointer;
+    height: 6px;
+}
+.carousel__scrollbar .scrollbar__thumb.show {
+    width: 504.605px;
+}

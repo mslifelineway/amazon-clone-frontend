@@ -9,6 +9,9 @@
 .custom__carousel .carousel__list {
     display: flex;
     list-style: none;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 .carousel__item .item {
     padding: 10px;
@@ -73,37 +76,36 @@
     height: 22px;
     width: 13px;
 }
-
 .custom__carousel .next__icon {
     transform: rotate(180deg);
 }
-.carousel__list--container:hover .carousel__scrollbar .scrollbar__track {
-    display: block;
-}
-.carousel__scrollbar {
-    display: block;
+.carousel__list--container ::-webkit-scrollbar {
     height: 6px;
-    width: 98%;
-    user-select: none;
-    font-size: 0;
-    margin: 30px 0px 20px 20px;
+    cursor: pointer !important;
+    z-index: 1600;
 }
-.carousel__scrollbar .scrollbar__track {
-    display: none;
 
+.carousel__list--container ::-webkit-scrollbar-track {
+    /* display: none; */
     background-color: #eee;
-    height: 1px;
-    border-radius: 4px;
-    width: 100%;
-    margin: 0;
+    height: 6px;
+    margin: 0 10px;
+    border-radius: 3px;
+    cursor: pointer !important;
+    z-index: 1600;
 }
-.carousel__scrollbar .scrollbar__thumb {
+
+.carousel__list--container ::-webkit-scrollbar-thumb {
+    /* display: none; */
     background-color: #aaa;
     border-radius: 6px;
-    margin: 0;
-    cursor: pointer;
-    height: 6px;
+    cursor: pointer !important;
+    z-index: 1600;
 }
-.carousel__scrollbar .scrollbar__thumb.show {
-    width: 504.605px;
+
+.carousel__list--container:hover ::-webkit-scrollbar-track {
+    display: block;
+}
+.carousel__list--container:hover ::-webkit-scrollbar-thumb {
+    display: block;
 }

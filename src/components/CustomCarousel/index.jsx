@@ -1,26 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { GetBanners } from "../../services/BannerCarouselService";
-
 import "./styles.css";
 
 const CustomCarousel = ({ data = [] }) => {
-  const [bannerIndex, setBannerIndex] = useState(0);
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(7);
-
-  const handleCarousel = (type = "next") => {
-    let index = bannerIndex;
-    if (type === "next") {
-      index += 1;
-    } else {
-      index -= 1;
-    }
-    if (index === banners.length) {
-      index = 0;
-    } else if (index === 0) {
-      index = banners.length - 1;
-    }
-    setBannerIndex(index);
+  const handleCarousel = (e, type) => {
+    const customCarousel = e.currentTarget.closest(".custom__carousel");
+    const carouselList = customCarousel.children[2].children[0];
+    const scrollBy =
+      carouselList.offsetWidth - 200 > 100
+        ? carouselList.offsetWidth - 200
+        : carouselList.offsetWidth;
+    if (type === "next") carouselList.scrollLeft += scrollBy;
+    else carouselList.scrollLeft -= scrollBy;
   };
 
   const RenderTimer = ({ offerExpires = {} }) => {
@@ -89,7 +79,7 @@ const CustomCarousel = ({ data = [] }) => {
       <a
         className="next__button controller"
         tabIndex={1}
-        onClick={() => handleCarousel("next")}
+        onClick={(e) => handleCarousel(e, "next")}
       >
         <i className="next__icon controller__icon"></i>
       </a>
@@ -114,11 +104,6 @@ const CustomCarousel = ({ data = [] }) => {
             );
           })}
         </ul>
-        <div className="carousel__scrollbar">
-          <span className="scrollbar__track">
-            <span className="scrollbar__thumb show"></span>
-          </span>
-        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import "./styles.css";
 const TextLinkButton = ({ text, link, onClick, style = {}, ...rest }) => {
   return (
     <a
-      link={link}
+      href={link}
       onClick={onClick}
       style={style}
       className="text__link--button"

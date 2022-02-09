@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { TextLinkButton } from "../";
 import "./styles.css";
 
-const CustomCarousel = ({ data = [] }) => {
+const CustomCarousel = ({ data = {} }) => {
+  const { products = [], title, linkText, link } = data;
+
   const handleCarousel = (e, type) => {
     const customCarousel = e.currentTarget.closest(".custom__carousel");
     const carouselList = customCarousel.children[2].children[0];
@@ -18,6 +21,7 @@ const CustomCarousel = ({ data = [] }) => {
     if (hours === "" && minutes === "" && seconds === "") {
       return <span></span>;
     }
+
     return (
       <span className="deal__timer">
         <span className="offer__expire--timer">
@@ -68,42 +72,51 @@ const CustomCarousel = ({ data = [] }) => {
   };
 
   return (
-    <div className="custom__carousel ">
-      <a
-        className="prev__button controller"
-        tabIndex={0}
-        onClick={handleCarousel}
-      >
-        <i className="prev__icon controller__icon"></i>
-      </a>
-      <a
-        className="next__button controller"
-        tabIndex={1}
-        onClick={(e) => handleCarousel(e, "next")}
-      >
-        <i className="next__icon controller__icon"></i>
-      </a>
-      <div className="carousel__list--container">
-        <ul className="carousel__list">
-          {data.map((d, i) => {
-            return (
-              <li className="carousel__item" key={`${d.image}__${d.link + i}`}>
-                <a href={d.link} target="_blank" className="item">
-                  <div className="image__details">
-                    <img alt="product" src={d.image} />
-                  </div>
-                  <div className="other__details">
-                    <RenderPriceDetails
-                      price={d.price}
-                      maxDealsPrice={d.maxDealsPrice}
-                    />
-                    <RenderTimer offerExpires={d.offerExpires} />
-                  </div>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+    <div className="custom__carousel-main__container">
+      <div className="carousel__heading">
+        <h2>{title}</h2>
+        <TextLinkButton text={linkText} link={link} />
+      </div>
+      <div className="custom__carousel ">
+        <a
+          className="prev__button controller"
+          tabIndex={0}
+          onClick={handleCarousel}
+        >
+          <i className="prev__icon controller__icon"></i>
+        </a>
+        <a
+          className="next__button controller"
+          tabIndex={1}
+          onClick={(e) => handleCarousel(e, "next")}
+        >
+          <i className="next__icon controller__icon"></i>
+        </a>
+        <div className="carousel__list--container">
+          <ul className="carousel__list">
+            {products.map((d, i) => {
+              return (
+                <li
+                  className="carousel__item"
+                  key={`${d.image}__${d.link + i}`}
+                >
+                  <a href={d.link} target="_blank" className="item">
+                    <div className="image__details">
+                      <img alt="product" src={d.image} />
+                    </div>
+                    <div className="other__details">
+                      <RenderPriceDetails
+                        price={d.price}
+                        maxDealsPrice={d.maxDealsPrice}
+                      />
+                      <RenderTimer offerExpires={d.offerExpires} />
+                    </div>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );

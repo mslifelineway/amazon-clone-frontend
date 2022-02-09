@@ -1,9 +1,34 @@
+.custom__carousel-main__container {
+    background: #fff;
+}
+.carousel__heading {
+    padding: 20px 20px 0 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.carousel__heading h2 {
+    display: block;
+    width: auto;
+    color: #0f1111;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 0;
+    margin-right: 10px;
+}
+.carousel__heading a.text__link--button {
+    width: auto !important;
+    margin-bottom: 5px;
+    display: block;
+}
+
 .custom__carousel {
     width: 100%;
     position: relative;
 }
 .carousel__list--container {
-    background: #fff;
     overflow: hidden;
 }
 .custom__carousel .carousel__list {
@@ -12,10 +37,15 @@
     overflow-y: hidden;
     overflow-x: auto;
     margin-bottom: 20px;
+    padding-bottom: 40px;
 }
 .carousel__item .item {
     padding: 10px;
     display: block;
+}
+.carousel__item .item:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-darkorange);
 }
 .carousel__item .image__details {
     height: 200px;
@@ -36,6 +66,7 @@
 .carousel__item .deal__timer .offer__expire--timer {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .carousel__item .deal__timer .offer__expire--timer .label {
     margin-right: 5px;
@@ -61,6 +92,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    opacity: 0.5;
 }
 .custom__carousel .prev__button:focus,
 .custom__carousel .next__button:focus {
@@ -86,8 +118,7 @@
 }
 
 .carousel__list--container ::-webkit-scrollbar-track {
-    /* display: none; */
-    background-color: #eee;
+    display: none;
     height: 6px;
     margin: 0 10px;
     border-radius: 3px;
@@ -96,7 +127,7 @@
 }
 
 .carousel__list--container ::-webkit-scrollbar-thumb {
-    /* display: none; */
+    display: none;
     background-color: #aaa;
     border-radius: 6px;
     cursor: pointer !important;

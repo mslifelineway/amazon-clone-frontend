@@ -5,6 +5,7 @@ a.text__link--button {
     white-space: normal;
     font-size: 13px;
     line-height: 19px;
+    cursor: pointer;
 }
 
 a.text__link--button:hover {

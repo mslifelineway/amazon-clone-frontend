@@ -25,7 +25,7 @@ const BannerCarousel = () => {
     }
     if (index === banners.length) {
       index = 0;
-    } else if (index === 0) {
+    } else if (index <= 0) {
       index = banners.length - 1;
     }
     setCarouselBanner(banners[index]);
